@@ -1,4 +1,4 @@
-# Fancy Hello World
+# Fancy Hello World!
 A program that provides fun ways to print the classic "Hello World!" text.
 
 An interface is displayed upon running the program that allows you to select options.
