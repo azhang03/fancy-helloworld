@@ -48,21 +48,26 @@ def main():
     for i in funcs:
         print("--"+i)
 
-    choice= input("Which one would you like? ").lower().strip()
+    choice= input("Which one would you like? 'exit' to exit ").lower().strip()
     while choice not in funcs:
         choice = input("That's not a valid choice. Try again! ").lower().strip()
 
-    if choice == "rando":
-        rando()
+    while choice != 'exit':
+        if choice == "rando":
+            rando()
 
-    elif choice == "scrambled":
-        scrambled()
+        elif choice == "scrambled":
+            scrambled()
 
-    elif choice == "rain":
-        matrix_rain()
+        elif choice == "rain":
+            matrix_rain()
 
-    elif choice == "colorful":
-        colorful_hello()
+        elif choice == "colorful":
+            colorful_hello()
+
+        choice = input("Which one would you like? 'exit' to exit ").lower().strip()
+        while choice not in funcs:
+            choice = input("That's not a valid choice. Try again! ").lower().strip()
 
 
 if __name__ == '__main__':
