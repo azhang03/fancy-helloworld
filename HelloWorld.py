@@ -43,7 +43,7 @@ def colorful_hello():
     print()
 
 def main():
-    funcs = ["rando", "scrambled", "rain", "colorful"]
+    funcs = ["rando", "scrambled", "rain", "colorful", 'exit']
     print("Hello World!\n\nWait... that's boring. Here's some fun ways to say it!")
     for i in funcs:
         print("--"+i)
